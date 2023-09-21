@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.todoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.todoTitle {
+
+}
+
+.todoList {
+    transition: all 0.3s ease 0s;
+}
+
+.todoText {
+    font-size: 25px;
+}
+
+.todoElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.todoElement[data-completed=true] .todoText {
+    text-decoration: line-through;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todoButton {
+    background-color: rgba(0, 123, 255, 0.85);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.todoButton:hover {
+    background-color: #007bff;
+}
+
+.even {
+    background-color: rgba(19, 232, 232, 0.65);
+}
+
+.odd {
+    background-color: rgba(243, 8, 106, 0.65);
+}
+
+.deleteButton {
+    background: #fa2d2d;
+}
+
+.deleteButton:hover {
+    background: #e80404;
+}
+
+.systemButton {
+    background: #fffbfb;
+    color: black;
+}
+
+.systemButton:hover {
+    background: #ececec;
+}

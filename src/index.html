@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <h1 class="title">Список задач</h1>
+            <div class="buttons">
+                <button class="todoButton systemButton" id="evenButton">Четные</button>
+                <button class="todoButton systemButton" id="oddButton">Нечетные</button>
+                <button class="todoButton systemButton" id="firstButton">Первый</button>
+                <button class="todoButton systemButton" id="lastButton">Последний</button>
+            </div>
+            <form class="todoForm">
+                <label for="todoTitle">Заголовок:</label>
+                <input type="text" id="todoTitle" name="todoTitle" required>
+                <button class="todoButton systemButton" id="submitButton" type="submit">Создать</button>
+            </form>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="wrapper">
+        <div class="container">
+            <ul class="todoList">
+
+            </ul>
+        </div>
+    </div>
+</main>
+<script type="module" src="index.js"></script>
+</body>
+</html>
